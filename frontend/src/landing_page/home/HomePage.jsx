@@ -12,10 +12,10 @@ export default function HomePage(){
         <i class="fa-brands fa-discord"></i>
         <Navbar/>
         <Hero/>
-        <Awards/>
         <Stats/>
         <Pricing/>
         <Education/>
+        {/* <Awards/> */}
         <OpenAccount/>
         <Footer/>
         </>
