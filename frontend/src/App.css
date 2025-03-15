@@ -42,14 +42,31 @@
 .f-link{
   text-decoration: none;
   color: #00000094;
-  /* color: #000000ab; */
+  /* color: #000000bb; */
   /* opacity: 0.6; */
-  font-size: 1.05rem;
-  font-weight: 500;
+  /* font-size: 1.05rem; */
+  /* font-weight: 500; */
 }
 .f-link:hover{
   color: #387ed1;
 }
 .btn-hover:hover{
   background-color: black !important;
+}
+.nav-link{
+  margin-left: 30px;
+}
+.f-blue{
+  color: #0073ff;
+  /* color: #545454a9; */
+}
+.f-last{
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.f-2{
+  padding: 12PX;
+  color: #2424247d;
 }

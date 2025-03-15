@@ -9,7 +9,6 @@ import Footer from "../Footer";
 export default function HomePage(){
     return(
         <>
-        <i class="fa-brands fa-discord"></i>
         <Navbar/>
         <Hero/>
         <Stats/>
