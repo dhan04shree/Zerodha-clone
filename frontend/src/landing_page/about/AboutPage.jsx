@@ -1,7 +1,10 @@
+import Hero from "./Hero";
+import Team from "./Team"
 export default function AboutPage(){
     return(
         <>
-        <h1>AboutPage</h1>
+        <Hero/>
+        <Team/>
         </>
     );
 }
