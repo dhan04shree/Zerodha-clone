@@ -21,6 +21,14 @@ function ProductPage() {
        productName="Console"
        productDesc="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
        learnMore="" />
+        <LeftImage
+        imageURL="images/coin.png"
+        productName="Coin"
+        productDesc="Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices."
+        tryDemo=""
+        googlePay=""
+        appStore=""
+      />
       <Universe />
     </>
   );
