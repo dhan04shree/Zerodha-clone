@@ -2,10 +2,7 @@ export default function RightImage({
     imageURL,
     productName,
     productDesc,
-    tryDemo,
-    learnMore,
-    googlePay,
-    appStore,
+    link1
   }) {
     return(
       <div className="container">
@@ -15,7 +12,7 @@ export default function RightImage({
                   <h1 className="pt-5" style={{fontSize:"2.1rem",opacity:"0.85"}}>{productName}</h1>
                   <p style={{fontSize:"1.1rem",opacity:"0.9"}}>{productDesc}</p>
                   <div style={{width:"70%",height:"10%",display:"flex",justifyContent:"space-between"}}>
-                  <a href={learnMore}>Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                  <a href={link1}>Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
                   </div>
   
               </div>
