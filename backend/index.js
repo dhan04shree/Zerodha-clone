@@ -17,9 +17,6 @@ const {PositionsModel} = require("./model/PositionsModel");
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/",(req,res)=>{
-    res.send("hii");
-})
 app.get("/allHoldings",async(req,res)=>{
     let allHoldings = await HoldingModel.find({});
     res.json(allHoldings);
