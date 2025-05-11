@@ -188,9 +188,9 @@ code {
   border-right: 1px solid #f1f1f1;
 }
 
-.order-table tr td:last-child {
+/* .order-table tr td:last-child {
   font-size: 0.6rem;
-}
+} */
 
 .order-table td {
   padding: 10px 10px;
@@ -326,7 +326,7 @@ hr {
 }
 
 /* sudo selectors */
-
+/* 
 .menu:hover {
   color: rgb(245, 104, 52);
 }
@@ -418,7 +418,7 @@ hr {
 
 .order-table tr td:last-child {
   font-size: 0.6rem;
-}
+} 
 
 .order-table td {
   padding: 10px 10px;
@@ -471,7 +471,7 @@ hr {
 
 .row .col:last-child h5 {
   color: rgb(72, 194, 55);
-}
+} */
 
 /* sudo selector */
 .item:hover {

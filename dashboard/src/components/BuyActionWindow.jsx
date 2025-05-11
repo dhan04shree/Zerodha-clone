@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import axios from "axios";
 
-import GeneralContext from "./GeneralContext";
+import {GeneralContext} from "./GeneralContext";
 
 import "./BuyActionWindow.css";
 
@@ -12,7 +12,7 @@ export default function BuyActionWindow({ uid }){
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:5173/newOrder", {
+    axios.post("http://localhost:3002/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
