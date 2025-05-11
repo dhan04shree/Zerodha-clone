@@ -1,16 +1,15 @@
 import { Tooltip, Grow } from "@mui/material";
+import { useState ,useContext} from "react";
 import {
   BarChartOutlined,
   KeyboardArrowDown,
   KeyboardArrowUp,
   MoreHoriz,
 } from "@mui/icons-material";
-import { useState,useContext } from "react";
 
-import GeneralContext from "./GeneralContext";
+import {GeneralContext} from "./GeneralContext";
 import { watchlist } from "../data/data";
 import DoughnutChart from "./DoughnoutChart";
-
 const labels = watchlist.map((subArray) => subArray["name"]);
 // console.log("Watchlisree",watchlist);
 const ListWatch = ()=> {
@@ -96,6 +95,9 @@ const WatchListActions = ({ uid }) => {
   const handleBuyClick = () => {
     generalContext.openBuyWindow(uid);
   };
+  const handleSellClick = () => {
+    generalContext.openSellWindow(uid);
+  };
 
   return (
     <span className="actions">
@@ -114,7 +116,7 @@ const WatchListActions = ({ uid }) => {
           placement="top"
           arrow
           slots={{ transition: Grow }}
-
+          onClick={handleSellClick}
         >
           <button className="sell">Sell</button>
         </Tooltip>
@@ -128,7 +130,7 @@ const WatchListActions = ({ uid }) => {
             <BarChartOutlined className="icon" />
           </button>
         </Tooltip>
-        <Tooltip title="More" placement="top" arrow TransitionComponent={Grow}>
+        <Tooltip title="More" placement="top" arrow slots={{ transition: Grow }}>
           <button className="action">
             <MoreHoriz className="icon" />
           </button>
