@@ -7,7 +7,7 @@ import Orders from "./Orders";
 import Positions from "./Positions";
 import Summary from "./Summary";
 import ListWatch from "./ListWatch";
-import GeneralContextProvider from "./GeneralContext";
+import {GeneralContextProvider} from "./GeneralContext";
 
 export default function Dashboard(){
   return (
