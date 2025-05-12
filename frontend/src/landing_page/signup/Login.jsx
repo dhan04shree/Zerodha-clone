@@ -4,14 +4,13 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./signup.css"
-const Signup = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
-    username: "",
   });
-  const { email, password, username } = inputValue;
+  const { email, password } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
@@ -26,19 +25,20 @@ const Signup = () => {
     });
   const handleSuccess = (msg) =>
     toast.success(msg, {
-      position: "bottom-right",
+      position: "bottom-left",
     });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "http://localhost:3002/login",
         {
           ...inputValue,
         },
         { withCredentials: true }
       );
+      console.log(data);
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
@@ -55,13 +55,12 @@ const Signup = () => {
       ...inputValue,
       email: "",
       password: "",
-      username: "",
     });
   };
 
   return (
     <div className="form_container">
-      <h2>Signup</h2>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label><br />
@@ -70,16 +69,6 @@ const Signup = () => {
             name="email"
             value={email}
             placeholder="Enter your email"
-            onChange={handleOnChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Username</label><br />
-          <input
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter your username"
             onChange={handleOnChange}
           />
         </div>
@@ -95,12 +84,13 @@ const Signup = () => {
         </div>
         <button className="btn btn-hover mt-3"
           style={{
+           
             margin: "auto",
             backgroundColor: "#387ed1",
             color: "white",
           }} type="submit">Submit</button> 
         <div>
-          Already have an account? <Link to={"/login"}>Login</Link>
+          Don't have an account? <Link to={"/signup"}>Signup</Link>
         </div>
       </form>
       <ToastContainer />
@@ -108,4 +98,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
