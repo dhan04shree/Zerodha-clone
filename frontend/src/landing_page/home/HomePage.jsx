@@ -18,7 +18,7 @@ export default function HomePage(){
     useEffect(() => {
         const verifyCookie = async () => {
             if (!cookies.token) {
-            navigate("/login");
+            navigate("/");
         }
         const { data } = await axios.post(
             "http://localhost:3002",
@@ -31,7 +31,7 @@ export default function HomePage(){
         ? toast(`Hello ${user}`, {
             position: "top-right",
           })
-        : (removeCookie("token"), navigate("/login"));
+        : (removeCookie("token"), navigate("/"));
     };
 
 
