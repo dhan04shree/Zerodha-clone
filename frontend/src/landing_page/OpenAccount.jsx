@@ -8,13 +8,7 @@ export default function OpenAccount() {
           F&O trades.
         </p>
         <button
-          className="btn p-2 fs-5 mb-5 btn-hover"
-          style={{
-            width: "20%",
-            margin: "auto",
-            backgroundColor: "#387ed1",
-            color: "white",
-          }}
+          style={{width:"14rem",margin:"auto",backgroundColor:"#387ed1",color:"white"}} className="p-2 my-3 btn fs-5 btn-hover"
         >
           Sign up for free
         </button>

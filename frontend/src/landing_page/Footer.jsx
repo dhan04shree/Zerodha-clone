@@ -3,7 +3,7 @@ export default function Footer() {
     <div style={{ backgroundColor: "#fbfbfb", borderTop: "1px solid #dcdcdc" }}>
       <div className="container">
         <div className="row py-4">
-          <div className="col-3">
+          <div className="col-md-3">
             <img src="images/logo.svg" style={{ width: "60%" }} alt="" />
             <p className="text-muted mt-3" style={{ fontSize: "0.8rem" }}>
               © 2010 - 2025, Zerodha Broking Ltd. <br /> All rights reserved.
@@ -19,8 +19,8 @@ export default function Footer() {
               <i className="fa-brands fa-telegram  ms-1"></i>
             </p>
           </div>
-          <div className="col-3">
-            <ul style={{ listStyleType: "none" }}>
+          <div className="col-md-3 mt-5">
+            <ul style={{ listStyleType: "none",paddingLeft:"0.5rem" }}>
               <li
                 className="pb-4 fs-5"
                 style={{ fontWeight: "500", color: "#000000bb" }}
@@ -74,8 +74,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-3">
-            <ul style={{ listStyleType: "none" }}>
+          <div className="col-md-3">
+            <ul style={{ listStyleType: "none",paddingLeft:"0.5rem" }}>
               <li
                 className="pb-4 fs-5"
                 style={{ fontWeight: "500", color: "#000000bb" }}
@@ -129,8 +129,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-3">
-            <ul style={{ listStyleType: "none" }}>
+          <div className="col-md-3">
+            <ul style={{ listStyleType: "none",paddingLeft:"0.5rem" }}>
               <li
                 className="pb-4 fs-5"
                 style={{ fontWeight: "500", color: "#000000bb" }}
@@ -160,12 +160,12 @@ export default function Footer() {
             "Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers. Receive information of your transactions directly from Exchange on your mobile/email at the end of the day. Issued in the interest of investors. KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary." Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque. Please write the Bank account number and sign the IPO application form to authorize your bank to make payment in case of allotment. In case of non allotment the funds will remain in your bank account. As a business we don't give stock tips, and have not authorized anyone to trade on behalf of others. If you find anyone claiming to be part of Zerodha and offering such services, please <span className="f-blue">create a ticket here</span>.</p>
         </p>
         <div className="f-last">
-          <a className="f-link f-2" href="">NSE </a>
+          <a className="f-link f-2 lh-lg" href="">NSE </a>
           <a className="f-link f-2" href="">BSE </a>
           <a className="f-link f-2" href="">MCX </a>
           <a className="f-link f-2" href="">Terms & conditions </a>
           <a className="f-link f-2" href="">Policies & procedures </a>
-          <a className="f-link f-2" href="">Privacy policy </a>
+          <a className="f-link f-2 lh-lg" href="">Privacy policy </a>
           <a className="f-link f-2" href="">Disclosure</a>
           <a className="f-link f-2" href="">For investor's attention</a>
           <a className="f-link f-2" href="">Investor charter</a>
