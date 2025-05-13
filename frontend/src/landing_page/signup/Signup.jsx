@@ -62,6 +62,7 @@ const Signup = () => {
   return (
     <div className="form_container">
       <h2 className="text-center">Signup</h2>
+      <div className="row">
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label><br />
@@ -103,6 +104,7 @@ const Signup = () => {
           Already have an account? <Link to={"/login"}>Login</Link>
         </div>
       </form>
+    </div>
       <ToastContainer />
     </div>
   );

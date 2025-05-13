@@ -42,7 +42,7 @@ function ProductPage() {
         link3="https://play.google.com/store/apps/details?id=com.zerodha.varsity"
         link4="https://apps.apple.com/in/app/varsity-by-zerodha/id1474610753"
       />
-      <p style={{textAlign:"center"}} className="fs-4">Want to know more about our technology stack? Check out the Zerodha.tech blog. </p>
+      <p style={{textAlign:"center"}} className="py-5 fs-4">Want to know more about our technology stack? Check out the Zerodha.tech blog. </p>
       <Universe />
     </>
     

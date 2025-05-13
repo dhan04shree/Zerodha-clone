@@ -2,9 +2,8 @@ function Brokerage() {
     return ( 
         <div className="container">
             
-            <div className="row text-center p-5 border-top">
-                <div className="col-8 p-5">
-                    
+            <div className="row text-center py-5 border-top">
+                <div className="col-md-8 py-5">                
                     <a href="" style={{textDecoration:"none"}}><h4 style={{opacity:"0.85"}} className='mt-3'>Brokerage Calculator</h4></a>
                     <ul style={{textAlign:"left",lineHeight:"2.5"}} className='text-muted'>
                     <li>Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
@@ -20,7 +19,7 @@ function Brokerage() {
                     </ul>
                 </div>
 
-                <div className="col-4 p-5">
+                <div className="col-md-4 py-5">
                 
                     <a href="" style={{textDecoration:"none"}}><h4 style={{opacity:"0.85"}} className='mt-3'>List of charges</h4></a>
                    <ul>
