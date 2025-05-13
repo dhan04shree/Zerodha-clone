@@ -2,7 +2,7 @@ export default function Stats(){
     return(
         <div className="container">
             <div className="row">
-                <div className="col-md-6 pt-5">
+                <div className="col-md-6 py-5">
                 <h1 className="fs-2 mb-5">Trust with confidence</h1>
                 <h2 className="fs-4"> Customer-first always</h2>
                 <p className="text-muted">That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.</p> 
