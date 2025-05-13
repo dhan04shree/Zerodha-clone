@@ -4,7 +4,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg border-bottom bg-light sticky-top">
       <div className="container p-2">
 
-        <div style={{display:"flex",justifyContent:"space-between"}}>
+        <div style={{display:"flex",gap:"6rem"}}>
 
             <Link className="navbar-brand" to={"/"}>
           <img src="images/logo.svg" style={{ width: "9rem" }} alt="logo" />
