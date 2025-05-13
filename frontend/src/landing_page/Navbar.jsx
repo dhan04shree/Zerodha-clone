@@ -5,7 +5,7 @@ export default function Navbar() {
       <div className="container p-2">
         <div style={{display:"flex",justifyContent:"space-between"}}>
             <Link className="navbar-brand" to={"/"}>
-          <img src="images/logo.svg" style={{ width: "25%" }} alt="logo" />
+          <img src="images/logo.svg" style={{ width: "45%" }} alt="logo" />
         </Link>
         <button
           className="navbar-toggler"
