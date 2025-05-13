@@ -1,6 +1,6 @@
 export default function OpenAccount() {
   return (
-    <div className="container p-5">
+    <div className="container py-5">
       <div className="row text-center">
         <h1 className="pt-5 pb-3 fs-2">Open a Zerodha account</h1>
         <p className="pb-3">

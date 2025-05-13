@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="row py-4">
           <div className="col-md-3">
-            <img src="images/logo.svg" style={{ width: "60%" }} alt="" />
+            <img src="images/logo.svg" style={{ width: "39%" }} alt="" />
             <p className="text-muted mt-3" style={{ fontSize: "0.8rem" }}>
               © 2010 - 2025, Zerodha Broking Ltd. <br /> All rights reserved.
             </p>
@@ -19,7 +19,7 @@ export default function Footer() {
               <i className="fa-brands fa-telegram  ms-1"></i>
             </p>
           </div>
-          <div className="col-md-3 mt-5">
+          <div className="col-md-3">
             <ul style={{ listStyleType: "none",paddingLeft:"0.5rem" }}>
               <li
                 className="pb-4 fs-5"

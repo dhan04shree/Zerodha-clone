@@ -3,7 +3,8 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg border-bottom bg-light sticky-top">
       <div className="container p-2">
-        <Link className="navbar-brand" to={"/"}>
+        <div style={{display:"flex",justifyContent:"space-between"}}>
+            <Link className="navbar-brand" to={"/"}>
           <img src="images/logo.svg" style={{ width: "25%" }} alt="logo" />
         </Link>
         <button
@@ -14,8 +15,9 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+           </div>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
+          <div className="navbar-nav ms-auto">
             <Link className="nav-link f-link" to={"/signup"}>
               Signup
             </Link>
