@@ -300,7 +300,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .profile .avatar {

@@ -28,10 +28,8 @@ export default function TopBar() {
     </div>
       <img src="logo.png" style={{ width: "40px",marginLeft:"1rem" }} />
 
-     {/* Move this inside the collapse, so it aligns properly */}
-    <div className="collapse navbar-collapse bg-white" id="navbarMenu">
-        {/* <img src="logo.png" style={{ width: "40px",marginLeft:"1rem" }} /> */}
-      <div className="navrespo d-flex flex-grow-1 align-items-center justify-content-end">
+    <div className="collapse bg-white navbar-collapse" id="navbarMenu">
+      <div className="navrespo bg-white d-flex flex-grow-1 align-items-center justify-content-end">
         <Menu />
     </div>
   </div>

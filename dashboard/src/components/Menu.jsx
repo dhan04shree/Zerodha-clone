@@ -20,8 +20,7 @@ export default function Menu() {
   ];
 
   return (
-    <ul className="navbar-nav nav-res mb-2 mb-lg-0 align-items-center">
-      
+    <ul className="navbar-nav nav-res mb-2 mb-lg-0 align-items-center">     
       {menuItems.map((item, index) => (
         <li className="nav-item" key={index}>
           <Link
