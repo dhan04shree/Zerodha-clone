@@ -641,6 +641,14 @@ hr {
   overflow-y: auto;
   position: relative;
 }
+@media(max-width:700px){
+  .watchlist-container{
+    display: none;
+  }
+  .indices-container{
+    display: none !important;
+  }
+}
 
 .search-container {
   display: flex;

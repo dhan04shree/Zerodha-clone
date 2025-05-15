@@ -1,100 +1,46 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-export default function Menu(){
+import "./navbarstyle.css"
+export default function Menu() {
   const [selectedMenu, setSelectedMenu] = useState(0);
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-
-  const handleMenuClick = (index) => {
+ const handleMenuClick = (index) => {
     setSelectedMenu(index);
   };
-
-  const handleProfileClick = (index) => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
-
+  
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
+  const menuItems = [
+    { name: "Dashboard", path: "/" },
+    { name: "Orders", path: "/orders" },
+    { name: "Holdings", path: "/holdings" },
+    { name: "Positions", path: "/positions" },
+    { name: "Funds", path: "/funds" },
+    { name: "Apps", path: "/apps" },
+  ];
+
   return (
-    <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
-      <div className="menus">
-        <ul>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/"
-              onClick={() => handleMenuClick(0)}
-            >
-              <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
-                Dashboard
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/orders"
-              onClick={() => handleMenuClick(1)}
-            >
-              <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>
-                Orders
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/holdings"
-              onClick={() => handleMenuClick(2)}
-            >
-              <p className={selectedMenu === 2 ? activeMenuClass : menuClass}>
-                Holdings
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/positions"
-              onClick={() => handleMenuClick(3)}
-            >
-              <p className={selectedMenu === 3 ? activeMenuClass : menuClass}>
-                Positions
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/funds"
-              onClick={() => handleMenuClick(4)}
-            >
-              <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
-                Funds
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/apps"
-              onClick={() => handleMenuClick(5)}
-            >
-              <p className={selectedMenu === 5 ? activeMenuClass : menuClass}>
-                Apps
-              </p>
-            </Link>
-          </li>
-        </ul>
-        <hr />
-        <div className="profile" onClick={handleProfileClick}>
+    <ul className="navbar-nav nav-res mb-2 mb-lg-0 align-items-center">
+      
+      {menuItems.map((item, index) => (
+        <li className="nav-item" key={index}>
+          <Link
+            to={item.path}
+            className={`nav-link ${selectedMenu === index ? "active" : ""}`}
+           onClick={() => handleMenuClick(index)}
+          >
+            <span className={selectedMenu === index ? activeMenuClass : menuClass}>
+            {item.name}
+            </span>
+          </Link>
+        </li>
+      ))}
+      <li className="nav-item d-flex align-items-center ms-lg-3">
+        <div className="profile" style={{ width: "30px", height: "30px" }}>
           <div className="avatar">ZU</div>
-          <p className="username">USERID</p>
         </div>
-        {isProfileDropdownOpen}
-      </div>
-    </div>
+        <span className="username">USERID</span>
+      </li>
+    </ul>
   );
-};
+}
